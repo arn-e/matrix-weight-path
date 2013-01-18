@@ -59,7 +59,7 @@ Sample CURL command :
 
 ###Reference & Reading
 
-Excellent tutorial on working with Java & C with the JNI :
+Excellent tutorial on working with Java & C with the JNI :  
 http://stuf.ro/calling-c-code-from-java-using-jni/
 
 Spark - Sinatra Inspired Java Web Framework  
