@@ -20,13 +20,13 @@ These two apps take radically different approaches to the solution.
 You may need to re-compile the C binary.  
 My compiler flags are below :
 
-  gcc -std=c99 -o libmatrix_weight.dylib -shared -I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers/ matrix_weight.c -lc
+    gcc -std=c99 -o libmatrix_weight.dylib -shared -I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers/ matrix_weight.c -lc
 
 Inspiration for this project came from the following excellent JNI-C tutorial :
 http://stuf.ro/calling-c-code-from-java-using-jni/
 
 Sample CURL command :
-  curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '"yo":"[[23,5,4,5],[6,7,15,5],[2,5,2,4]]"}'  http://localhost:9000/
+    curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '"yo":"[[23,5,4,5],[6,7,15,5],[2,5,2,4]]"}'  http://localhost:9000/
 
 To-Do :
 
