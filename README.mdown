@@ -2,7 +2,7 @@
 
 Two sample API's which will determine the minimum weight path through a matrix
 
-Problem Outline :
+Problem Outline :  
 https://gist.github.com/4004776
 
 These two apps take radically different approaches to the solution.
