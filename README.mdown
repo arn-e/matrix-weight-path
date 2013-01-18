@@ -40,7 +40,7 @@ My compiler flags are below (OSX) :
     gcc -std=c99 -o libmatrix_weight.dylib -shared -I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers/ matrix_weight.c -lc
 
 'dylib' may need to be substituted with 'so' on non-OSX machines.
-The directory specified is the path to 'jni.h' on my system. In case it's different on yours, you can get the path by using *locate* or *mdfind* (OSX only).
+The directory specified is the path to the 'jni.h' header file on my system. In case it's different on yours, you can get the path by using *locate* or *mdfind* (OSX only).
 
     locate jni.h
     mdfind jni.h
