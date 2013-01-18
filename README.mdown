@@ -3,7 +3,7 @@
 Two sample API's which will determine the minimum weight path through a matrix
 Both should accommodate matrices of varying dimensions
 
-*Problem Outline* :  
+**Problem Outline** :  
 https://gist.github.com/4004776
 
 These two apps take radically different approaches to the solution.
@@ -23,11 +23,11 @@ The Spark JAR files as well as dependencies will need to be added to your CLASSP
 
 For convenience, and given that this is a very small project, the dependencies have been added to a  "./lib" directory
 
-*Compile* :
+**Compile** :
 
     javac -cp "./lib/*" ShortWeight.java
 
-*Run* :
+**Run** :
 
     java -cp "./lib/*:." ShortWeight
 
@@ -54,8 +54,8 @@ Sample CURL command :
 
 ###To-Do :
 
-* Add tests for both applications
-  (I typically TDD, but this entire project was a bit of an adventure)
+* Add tests for both applications  
+  (I normally strive to test, however this was a bit of an exploratory project, and I got lost in coding)
 
 ###Reference & Reading
 
