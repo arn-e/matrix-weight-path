@@ -22,7 +22,7 @@ My compiler flags are below :
 
     gcc -std=c99 -o libmatrix_weight.dylib -shared -I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers/ matrix_weight.c -lc
 
-Inspiration for this project came from the following excellent JNI-C tutorial :
+Inspiration for this project came from the following excellent JNI-C tutorial :   
 http://stuf.ro/calling-c-code-from-java-using-jni/
 
 Sample CURL command :  
