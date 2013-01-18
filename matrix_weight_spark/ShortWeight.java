@@ -44,8 +44,6 @@ public class ShortWeight{
     }
 
     private static int calculateShortestPath(int[] matrixValues, int rows, int columns){
-        System.out.println(rows);
-        System.out.println(columns);
         int lowestWeight = matrixWeight(matrixValues, rows, columns);
         return lowestWeight;
     }
