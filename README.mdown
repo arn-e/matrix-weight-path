@@ -1,0 +1,25 @@
+## Matrix Minimum Weight Path
+
+Two sample API's which will determine the minimum weight path through a matrix
+
+Problem Outline :
+https://gist.github.com/4004776
+
+These two apps take radically different approaches to the solution.
+
+* matrix_weight_sinatra 
+  * Ruby / Sinatra
+  * basically a one line solution in Ruby. It's a bit of a nested circus, but elegant in its own way
+* matrix_weight_spark
+  * Java / C / Spark
+  * a (very) long winded implementation using the Sinatra-inspired web framework Spark which runs on the JVM
+  * core web-application logic written in Java
+  * matrix calculations written in C and linked with JNI
+
+You may need to re-compile the C binary. My compiler flags are below :
+
+gcc -std=c99 -o libmatrix_weight.dylib -shared -I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers/ matrix_weight.c -lc
+
+Inspiration for this project came from the following excellent JNI-C tutorial :
+http://stuf.ro/calling-c-code-from-java-using-jni/
+
