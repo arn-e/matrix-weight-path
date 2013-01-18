@@ -31,7 +31,7 @@ For convenience, and given that this is a very small project, the dependencies h
 
     java -cp "./lib/*:." ShortWeight
 
-Note that the current directory has also been added to the path
+Note that the current directory may need to be added to the path as in the above example.
 
 You may need to re-compile the C binary depending on your platform.
 
@@ -59,7 +59,7 @@ Sample cURL command :
 
 ###Reference & Reading
 
-**Excellent tutorial on working with Java & C with the JNI** :  
+**Excellent tutorial on working with Java & C via the JNI** :  
 http://stuf.ro/calling-c-code-from-java-using-jni/
 
 **Spark - Sinatra Inspired Java Web Framework**  
