@@ -59,14 +59,14 @@ Sample CURL command :
 
 ###Reference & Reading
 
-Excellent tutorial on working with Java & C with the JNI :  
+**Excellent tutorial on working with Java & C with the JNI** :  
 http://stuf.ro/calling-c-code-from-java-using-jni/
 
-Spark - Sinatra Inspired Java Web Framework  
+**Spark - Sinatra Inspired Java Web Framework**  
 http://www.sparkjava.com/readme.html
 
-Sinatra   
+**Sinatra**   
 http://www.sinatrarb.com/
 
-JNI Documentation  
+**JNI Documentation (Oracle, I haven't read most of this)**  
 http://docs.oracle.com/javase/6/docs/technotes/guides/jni/spec/jniTOC.html
