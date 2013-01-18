@@ -3,7 +3,7 @@
 Two sample API's which will determine the minimum weight path through a matrix
 Both should accommodate matrices of varying dimensions
 
-Problem Outline :  
+*Problem Outline* :  
 https://gist.github.com/4004776
 
 These two apps take radically different approaches to the solution.
@@ -17,19 +17,45 @@ These two apps take radically different approaches to the solution.
   * core web-application logic written in Java
   * matrix calculations written in C and linked with JNI
 
-You may need to re-compile the C binary.  
-My compiler flags are below :
+###Installation Instructions (Spark Application) :
+
+The Spark JAR files as well as dependencies will need to be added to your CLASSPATH 
+
+For convenience, and given that this is a very small project, the dependencies have been added to a  "./lib" directory
+
+*Compile* :
+
+    javac -cp "./lib/*" ShortWeight.java
+
+*Run* :
+
+    java -cp "./lib/*:." ShortWeight
+
+Note that the current directory has also been added to the path
+
+You may need to re-compile the C binary depending on your platform.
+
+My compiler flags are below (OSX) :
 
     gcc -std=c99 -o libmatrix_weight.dylib -shared -I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers/ matrix_weight.c -lc
 
+###Installation Instructions (Sinatra Application) :
+
+Assuming you have a Ruby environment set up, this should be considerably simpler :
+
+    gem install sinatra
+    ruby min_weight.rb
+
 Inspiration for this project came from the following excellent JNI-C tutorial :   
 http://stuf.ro/calling-c-code-from-java-using-jni/
+
+###User Testing
 
 Sample CURL command :  
 
     curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '"yo":"[[23,5,4,5],[6,7,15,5],[2,5,2,4]]"}'  http://localhost:9000/
 
-To-Do :
+###To-Do :
 
 * Add tests for both applications
   (I typically TDD, but this entire project was a bit of an adventure)
