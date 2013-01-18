@@ -16,7 +16,8 @@ These two apps take radically different approaches to the solution.
   * core web-application logic written in Java
   * matrix calculations written in C and linked with JNI
 
-You may need to re-compile the C binary. My compiler flags are below :
+You may need to re-compile the C binary.  
+My compiler flags are below :
 
 gcc -std=c99 -o libmatrix_weight.dylib -shared -I/System/Library/Frameworks/JavaVM.framework/Versions/A/Headers/ matrix_weight.c -lc
 
