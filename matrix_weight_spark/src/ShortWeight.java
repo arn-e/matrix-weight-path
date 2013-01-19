@@ -43,7 +43,7 @@ public class ShortWeight{
         });
     }
 
-    private static int calculateShortestPath(int[] matrixValues, int rows, int columns){
+    public static int calculateShortestPath(int[] matrixValues, int rows, int columns){
         int lowestWeight = matrixWeight(matrixValues, rows, columns);
         return lowestWeight;
     }
