@@ -60,10 +60,6 @@ Sample cURL command :
 
     curl -v -H "Accept: application/json" -H "Content-type: application/json" -X POST -d '{"matrix":"[[23,5,4,5],[6,7,15,5],[2,5,2,4]]"}'  http://localhost:9000/
 
-###To-Do :
-
-* Add tests for both applications  
-  (I normally strive to test, however this was a bit of an exploratory project, and I got lost in coding)
 
 ###Reference & Reading
 
