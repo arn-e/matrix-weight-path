@@ -60,6 +60,7 @@ int calculated_weight(int values[], int rows, int columns)
   return result;
 }
 
+// JNI calls
 JNIEXPORT jint JNICALL Java_ShortWeight_matrixWeight
   (JNIEnv * env, jobject jobj, jintArray matrix_values, jint rows, jint columns)
 {
