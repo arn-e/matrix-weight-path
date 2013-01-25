@@ -69,6 +69,5 @@ JNIEXPORT jint JNICALL Java_ShortWeight_matrixWeight
   matrix_ptr = (*env)->GetIntArrayElements(env, matrix_values, NULL);
   int matrix_weight = calculated_weight(matrix_ptr, rows, columns);
   (*env)->ReleaseIntArrayElements(env, matrix_values, matrix_ptr, 0);
-
   return matrix_weight;
 }
