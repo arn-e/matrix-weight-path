@@ -1,6 +1,6 @@
 ## Matrix Minimum Weight Path
 
-Two sample API's which will determine the minimum weight path through a matrix
+Two web API's which will determine the minimum weight path through a matrix
 Both should accommodate matrices of varying dimensions
 
 **Problem Outline** :  
